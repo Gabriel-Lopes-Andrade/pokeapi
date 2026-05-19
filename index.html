@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>PÔ'CMON</title>
 </head>
 <body>
+
     <header>
-        <h2>TEXTO</h2>
-    <nav>
-        <input type="text" placeholder="INPUT">
-        <button>BTN</button>
-    </nav>
+        <h2>PÔ'CMON</h2>
+        <nav>
+          
+            <input type="text" id="pokemonProcura" placeholder="Nome ou ID do Pokémon">
+            <!-- Função de Busca auxiliada ao JS, ao procurar o pokemon, os dados são inseridos aqui -->
+            <button onclick="buscarPokemon()">Buscar</button>
+        </nav>
     </header>
-    <!-- Mei da Página  -->
+
     <div>
-        <h2>TEXTO</h2>
+        <h2>POKEMON</h2>
     </div>
 
     <main>
-    <img src="./IMG/Emoji Engraçado.jpeg" alt="Emoji">
 
-    <section>
-        <p>Texto</p>
-        <p>Texto</p>
-        <p>Texto</p>
-        <p>Texto</p>
-    <div>
-        <button>BTN</button>
-        <button>BTN</button>
-    </div>
-    </section>
+        <img id="pokemonIMG" src="" alt="IMG">
+
+        <section>
+
+            <p id="pokemonNome">NOME:</p>
+            <p id="pokemonTipo">TIPO:</p>
+            <p id="pokemonAltura">ALTURA:</p>
+            <p id="pokemonPeso">PESO:</p>
+
+            <div>
+                <button>Seguinte</button>
+                <button>Anterior</button>
+            </div>
+        </section>
     </main>
+
+    <script src="./API.js"></script>
 
 </body>
 </html>
