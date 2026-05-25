@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const som = new Audio("./audio/pikomon.mp3");
+  const som = new Audio("./assets/audio/pikomon.mp3");
   som.volume = 0.4;
 
   const tocarUmaVez = () => {
