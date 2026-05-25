@@ -4,43 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>PÔ'CMON</title>
+    <title>POKEAPI</title>
 </head>
 <body>
 
     <header>
-        <h2>PÔ'CMON</h2>
+        <h2>PokeAPI</h2>
         <nav>
-          
             <input type="text" id="pokemonProcura" placeholder="Nome ou ID do Pokémon">
-            <!-- Função de Busca auxiliada ao JS, ao procurar o pokemon, os dados são inseridos aqui -->
             <button onclick="buscarPokemon()">Buscar</button>
         </nav>
     </header>
 
     <div>
-        <h2>POKEMON</h2>
+        <h2>PIKOMON</h2>
     </div>
 
     <main>
-
-        <img id="pokemonIMG" src="" alt="IMG">
+        <img id="pokemonIMG">
 
         <section>
-
             <p id="pokemonNome">NOME:</p>
             <p id="pokemonTipo">TIPO:</p>
             <p id="pokemonAltura">ALTURA:</p>
             <p id="pokemonPeso">PESO:</p>
 
             <div>
-                <button>Seguinte</button>
-                <button>Anterior</button>
+                <button onclick="navegarPokemon(-1)">☚</button>
+                <button onclick="navegarPokemon(1)">☛</button>
             </div>
         </section>
     </main>
 
-    <script src="./API.js"></script>
+    <script src="./app.js"></script>
 
 </body>
 </html>
