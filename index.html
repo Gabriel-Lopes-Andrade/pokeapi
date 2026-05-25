@@ -1,42 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>POKEAPI</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h2>PokeAPI</h2>
-        <nav>
-            <input type="text" id="pokemonProcura" placeholder="Nome ou ID do Pokémon">
-            <button onclick="buscarPokemon()">Buscar</button>
-        </nav>
+      <h2>PokeAPI</h2>
+      <nav>
+        <input
+          type="text"
+          id="pokemonProcura"
+          placeholder="Nome ou ID do Pokémon"
+        />
+        <button onclick="buscarPokemon()">Buscar</button>
+      </nav>
     </header>
 
     <div>
-        <h2>PIKOMON</h2>
+      <h2>PIKOMON</h2>
     </div>
 
     <main>
-        <img id="pokemonIMG">
-        
-            <section>
-            <p id="pokemonNome">NOME:</p>
-            <p id="pokemonTipo">TIPO:</p>
-            <p id="pokemonAltura">ALTURA:</p>
-            <p id="pokemonPeso">PESO:</p>
+      <img id="pokemonIMG" />
 
-                <div>
-                    <button onclick="navegarPokemon(-1)">☚</button>
-                    <button onclick="navegarPokemon(1)">☛</button>
-                </div>
-            </section>
+      <section>
+        <p id="pokemonNome">NOME:</p>
+        <p id="pokemonTipo">TIPO:</p>
+        <p id="pokemonAltura">ALTURA:</p>
+        <p id="pokemonPeso">PESO:</p>
+
+        <div>
+          <button onclick="navegarPokemon(-1)">☚</button>
+          <button onclick="navegarPokemon(1)">☛</button>
+        </div>
+      </section>
     </main>
 
-    <script src="./app.js"></script>
+    
 
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
