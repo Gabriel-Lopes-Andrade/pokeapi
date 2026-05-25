@@ -1,1 +1,1 @@
-Tudo bem? Estou fazendo uma POKEAPI...não tão original, eu sei, mas me ajuda a entender melhor as funções html e css. Ainda estou aprimorando meu JS, mas acredito que com o tempo pego a manha. Enfim, sobre o repositório, ele tem a função de busca po nome e ID, além de poder alternar para o próximo pokemon, mais diretamente pelos butões abaixo das descrições deles. 
+Tudo bem? Estou fazendo uma POKEAPI, ele tem a função de busca po nome e ID, além de poder alternar para o próximo pokemon, mais diretamente pelos butões abaixo das descrições deles. 
