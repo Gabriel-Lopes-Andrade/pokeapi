@@ -2,7 +2,7 @@ const api = `https://pokeapi.co/api/v2/pokemon/`;
 
 async function buscarPokemon() {
   const input = document.getElementById("pokemonProcura");
-  const digitado = input.value.trim();
+ const digitado = input.value.trim().replace(/\s+/g, "");
 
   if (digitado === "") {
     alert("Digite o nome ou número de um Pokémon!");
