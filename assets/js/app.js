@@ -116,22 +116,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const som = new Audio("./assets/audio/pikomon.mp3");
-  som.volume = 0.4;
+    // Enter para buscar
+    document.getElementById("pokemonProcura").addEventListener("keydown", function (e) {
+        if (e.key === "Enter") buscarPokemon();
+    });
 
-  const tocarUmaVez = () => {
-    som.play();
-    document.body.removeEventListener("click", tocarUmaVez); // remove após tocar
-  };
+    // Som — toca no primeiro clique em qualquer lugar da página
+    const som = new Audio("./assets/audio/pikomon.mp3");
+    som.volume = 0.4;
 
-
-  som.play().catch(() => {
-    document.body.addEventListener("click", tocarUmaVez);
-  });
-
-  document
-    .getElementById("pokemonProcura")
-    .addEventListener("keydown", function (e) {
-      if (e.key === "Enter") buscarPokemon();
+    document.body.addEventListener("click", function tocarUmaVez() {
+        som.play();
+        document.body.removeEventListener("click", tocarUmaVez);
     });
 });
