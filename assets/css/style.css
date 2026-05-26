@@ -176,3 +176,57 @@ nav > button {
   color: #fff;
   text-shadow: 1px 1px 2px #000;
 }
+
+
+
+/* === Adição para o Tablet=== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 280px;
+        height: 280px;
+        margin-top: 20px;
+    }
+
+    section > p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+/* === Adição p o MOBILE  === */
+@media (max-width: 480px) {
+    header h2 {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    nav input {
+        width: 160px;
+    }
+
+    img {
+        width: 220px;
+        height: 220px;
+    }
+
+    section > p {
+        width: 160px;
+        font-size: 13px;
+    }
+
+    button {
+        width: 45px;
+        height: 45px;
+    }
+}

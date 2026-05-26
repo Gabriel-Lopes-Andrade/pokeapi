@@ -122,3 +122,4 @@ function tocarSom() {
     som.currentTime = 0; // reinicia caso já esteja tocando
     som.play();
 }
+
