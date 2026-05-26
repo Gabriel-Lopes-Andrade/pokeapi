@@ -179,7 +179,7 @@ nav > button {
 
 
 
-/* === Adição para o Tablet=== */
+/* === Adição para ajustar pro Tablet=== */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -204,7 +204,7 @@ nav > button {
     }
 }
 
-/* === Adição p o MOBILE  === */
+/* === Adição p usar no MOBILE  === */
 @media (max-width: 480px) {
     header h2 {
         margin-left: 0;
