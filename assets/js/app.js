@@ -89,23 +89,23 @@ const tiposPT = {
 let pokemonAtualId = 1;
 
 async function navegarPokemon(direcao) {
-  const input = document.getElementById("pokemonProcura");
-  const digitado = input.value.trim();
+    const input = document.getElementById("pokemonProcura");
+    const digitado = input.value.trim();
 
-  if (!isNaN(digitado) && digitado !== "") {
-    pokemonAtualId = parseInt(digitado);
-  }
+    if (!isNaN(digitado) && digitado !== "") {
+        pokemonAtualId = parseInt(digitado);
+    }
 
-  pokemonAtualId += direcao;
+    pokemonAtualId += direcao;
 
-  if (pokemonAtualId < 1) pokemonAtualId = 1;
-  if (pokemonAtualId > 1025) pokemonAtualId = 1025;
+    // Ao passar do 1025 volta pro 1, ao passar do 1 vai pro 1025
+    if (pokemonAtualId > 1025) pokemonAtualId = 1;
+    if (pokemonAtualId < 1) pokemonAtualId = 1025;
 
-  input.value = pokemonAtualId;
-  const url = `${api}${pokemonAtualId}`;
-  getPokemon(url);
+    input.value = pokemonAtualId;
+    const url = `${api}${pokemonAtualId}`;
+    getPokemon(url);
 }
-
 // Enter no input busca o Pokémon
 document.addEventListener("DOMContentLoaded", function () {
   document
@@ -115,11 +115,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const som = new Audio("/pokeapi/assets/audio/pikomon.mp3");
+const som = new Audio("./assets/audio/pikomon.mp3");
 som.volume = 0.4;
 
 function tocarSom() {
-    som.currentTime = 0; // reinicia caso já esteja tocando
+    som.currentTime = 0;
     som.play();
 }
-
